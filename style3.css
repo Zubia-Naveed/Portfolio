@@ -146,7 +146,7 @@ header nav h2{
 }
 .btnn:hover{
     background-color: white;
-    color black
+    color: black
 }
 .about{
     align-items: center;
@@ -308,4 +308,162 @@ footer{
 
 .contact button:hover{
     background:#0059cc;
+}
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media (max-width: 992px){
+
+    .start{
+        flex-direction: column;
+        text-align: center;
+        padding: 170px 40px 60px;
+        gap: 40px;
+    }
+
+    #div1{
+        width:100%;
+    }
+
+    .imgdiv{
+        width:100%;
+        justify-content:center;
+        padding:0;
+    }
+
+    #mine,
+    .imgdiv img{
+        width:250px;
+        height:auto;
+    }
+
+    .skillsdiv{
+        flex-wrap:wrap;
+    }
+
+    .projectsdiv{
+        flex-wrap:wrap;
+    }
+
+    .contact form{
+        width:90%;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    header{
+        padding:15px 20px;
+    }
+
+    nav{
+        flex-direction:column;
+        height:auto;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .start{
+        padding:170px 25px 50px;
+    }
+
+    #div1 h1{
+        font-size:40px;
+    }
+
+    #div1 h2{
+        font-size:26px;
+    }
+
+    .hero{
+        font-size:18px;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact{
+        margin:50px 20px;
+    }
+
+    .about{
+        padding:30px 20px;
+    }
+
+    .skillsdiv{
+        gap:20px;
+    }
+
+    .skillsdiv div{
+        padding:15px 25px;
+        font-size:18px;
+    }
+
+    .projectsdiv{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .projectsdiv div{
+        width:90%;
+        padding:25px;
+    }
+
+    .contact form{
+        width:100%;
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    header nav h2{
+        font-size:28px;
+    }
+
+    nav ul{
+        gap:10px;
+    }
+
+    nav ul li a{
+        font-size:15px;
+    }
+
+    #div1 h1{
+        font-size:32px;
+    }
+
+    #div1 h2{
+        font-size:22px;
+    }
+
+    .hero{
+        font-size:16px;
+    }
+
+    #mine,
+    .imgdiv img{
+        width:200px;
+    }
+
+    .btnn{
+        padding:12px 24px;
+    }
+
+    .skillsdiv div{
+        width:100%;
+    }
+
+    .projectsdiv div{
+        width:100%;
+    }
+
 }
